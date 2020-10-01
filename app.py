@@ -43,14 +43,11 @@ def main():
         decision_tree = joblib.load('DecisionTree.pkl')
         pred_dt = decision_tree.predict(df)
         list.append(pred_dt)
-        svc = joblib.load('SVC.pkl')
-        pred_svc = svc.predict(df)
-        list.append(pred_svc)
         rf = joblib.load('RandomForest.pkl')
         pred_rf = rf.predict(df)
         list.append(pred_rf)
 
-    model = ['Gaussian NB', 'Logistic Regression', 'KNN', 'Decision Tree', 'Support Vector Classifier', 'Random Forest']
+    model = ['Gaussian NB', 'Logistic Regression', 'KNN', 'Decision Tree', 'Random Forest']
 
     for i in range(6):
         if list[i][0] == 0:
