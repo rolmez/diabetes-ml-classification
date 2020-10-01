@@ -49,7 +49,7 @@ def main():
 
     model = ['Gaussian NB', 'Logistic Regression', 'KNN', 'Decision Tree', 'Random Forest']
 
-    for i in range(6):
+    for i in range(5):
         if list[i][0] == 0:
             tanı = 'Değerleri kontrol ediniz'
             st.sidebar.success(model[i] + ": " + tanı)
